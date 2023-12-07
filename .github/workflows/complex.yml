@@ -1,6 +1,6 @@
 name: Complex
 
-On: push
+on: push
 
 jobs:
   Ubuntu:
@@ -19,7 +19,7 @@ jobs:
     - run: date
 
   Depends:
-    needs: [ubuntu, windows, macos]
+    needs: [Ubuntu, Windows, MacOS]
     runs-on: Windows-latest
     steps:
     - run: date
